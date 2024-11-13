@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Todo App</title>
+        <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-database.js"></script>
+
+
+        <style>
+            .main{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 50px;
+                width: 100%;
+                max-width: 400px;
+                padding: 20px;
+                background-color: #fff;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+               
+                
+            }
+            html, body {
+                
+            background-color:rgb(127, 225, 255);
+            height: 100vh;
+            font-family: Arial, sans-serif;
+}
+    .cen{
+        margin: 20px;
+        padding: 10px;
+    }
+        </style>
+    </head>
+    <body>
+
+        <h1 style="text-align: left; margin: 20px; padding: 10px; font-family: Arial, Helvetica, sans-serif;">Todo APP</h1>
+
+        <div class="main">
+
+            <input id="inputField" placeholder="Enter Tasks" type="text">
+            <button onclick="addTodo()">Add List</button>
+            <button onclick="deleteAllTodos()">Delete All List</button>
+        </div>
+
+        <div class="cen">
+            <ul id="list"></ul>
+        </div>
+        <script src="database.js"></script>
+    </body>
+</html>
